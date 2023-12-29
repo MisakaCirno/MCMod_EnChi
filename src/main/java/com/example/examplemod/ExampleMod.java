@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.registry.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -41,6 +42,9 @@ public class ExampleMod
         // Register ourselves for server and other game events we are interested in
         // 注册我们自己感兴趣的服务器和其他游戏事件
         MinecraftForge.EVENT_BUS.register(this);
+
+        // 把注册表注册到mod事件总线
+        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)
