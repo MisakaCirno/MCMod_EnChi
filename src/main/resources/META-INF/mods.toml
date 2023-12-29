@@ -4,35 +4,74 @@
 # Note that there are a couple of TOML lists in this file.
 # Find more information on toml format here:  https://github.com/toml-lang/toml
 # The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+
+# 这是一个示例mods.toml文件。它包含与加载mod相关的数据。
+# 有几个强制字段（#mandatory），还有许多可选字段（#optional）。
+# 总体格式是标准的TOML格式，v0.5.0。
+# 请注意，此文件中有几个TOML列表。
+# 在此处查找有关toml格式的更多信息：
+#
+# 要加载的mod加载器类型的名称-对于常规FML @Mod mod，它应该是javafml
 modLoader="javafml" #mandatory
+
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
-loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+# 一个版本范围，用于匹配所述mod加载器-对于常规FML @Mod，它将是forge版本
+loaderVersion="[40,)" #mandatory
+# This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+# 这通常是Forge每个Minecraft版本都会增加的。请参阅我们的下载页面以获取版本列表。
+
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
+# 你的mod的许可证。这是强制性的元数据，可以更容易地理解您的再分配属性。
+# 在https://choosealicense.com/上查看您的选项。版权所有是默认的版权立场，因此在这里是默认的。
 license="All rights reserved"
+
 # A URL to refer people to when problems occur with this mod
+# 一个URL，用于在出现此mod的问题时引用人们
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+
 # A list of mods - how many allowed here is determined by the individual mod loader
+# 一系列mod-这里允许的数量由各个mod加载器决定
 [[mods]] #mandatory
+
 # The modid of the mod
+# mod的modid
 modId="examplemod" #mandatory
+
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
+# mod的版本号-这里有一些众所周知的$ {}变量可用，或者只需硬编码即可
+# $ {file.jarVersion}将替换从mod的JAR文件元数据中读取的Implementation-Version的值
+# 有关如何在构建期间完全自动填充此内容的相关build.gradle脚本，请参见
 version="${file.jarVersion}" #mandatory
+
  # A display name for the mod
+# mod的显示名称
 displayName="Example Mod" #mandatory
+
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+# 用于查询此mod的更新的URL。请参阅JSON更新规范
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+
 # A URL for the "homepage" for this mod, displayed in the mod UI
+# 此mod的“主页”的URL，显示在mod UI中
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+
 # A file name (in the root of the mod JAR) containing a logo for display
+# 包含用于显示的徽标的文件名（在mod JAR的根目录中）
 logoFile="examplemod.png" #optional
+
 # A text field displayed in the mod UI
+# 在mod UI中显示的文本字段
 credits="Thanks for this example mod goes to Java" #optional
+
 # A text field displayed in the mod UI
+# 在mod UI中显示的文本字段
 authors="Love, Cheese and small house plants" #optional
+
 # The description text for the mod (multi line!) (#mandatory)
+# mod的描述文本（多行！）
 description='''
 This is a long form description of the mod. You can write whatever you want here
 
@@ -40,23 +79,37 @@ Have some lorem ipsum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio eu tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque volutpat ligula eget lacus auctor sagittis. In hac habitasse platea dictumst. Nunc gravida elit vitae sem vehicula efficitur. Donec mattis ipsum et arcu lobortis, eleifend sagittis sem rutrum. Cras pharetra quam eget posuere fermentum. Sed id tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 '''
+
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+# 依赖项-使用。指示特定modid的依赖项。依赖关系是可选的。
 [[dependencies.examplemod]] #optional
     # the modid of the dependency
+    # 依赖项的modid
     modId="forge" #mandatory
+
     # Does this dependency have to exist - if not, ordering below must be specified
+    # 此依赖项是否必须存在-如果没有，则必须指定下面的排序
     mandatory=true #mandatory
+
     # The version range of the dependency
+    # 依赖项的版本范围
     versionRange="[40,)" #mandatory
+
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    # 依赖项的排序关系-如果关系不是强制性的，则在之前或之后需要
     ordering="NONE"
+
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    # 依赖项应用的一面-两者，客户端或服务器
     side="BOTH"
+
 # Here's another dependency
+# 这是另一个依赖项
 [[dependencies.examplemod]]
     modId="minecraft"
     mandatory=true
-# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    # This version range declares a minimum of the current minecraft version up to but not including the next major version
+    # 这个版本范围声明了当前Minecraft版本的最小值，但不包括下一个主要版本
     versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
