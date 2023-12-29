@@ -1,6 +1,12 @@
 # MCMod_EnChi
 Minecraft mod for 1.18.2 forge.
 
+# 部署流程
+1. 下载项目，用IDEA打开
+2. 启动后等待Gradle下载依赖
+3. 运行Gradle中的`genIntellijRuns`任务
+4. 运行Gradle中的`runClient`任务，启动游戏
+
 # 参考资料
 
 我的世界Minecraft 1.19 Mod开发教程分享-01-环境搭建 - 哔哩哔哩
