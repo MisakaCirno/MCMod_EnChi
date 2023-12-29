@@ -17,8 +17,7 @@ plugins {
 }
 apply plugin: 'net.minecraftforge.gradle'
 
-
-version = '0.0.1'
+version = '1.18.2-0.0.0.1'
 group = 'com.enchi.mcmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'enchi_forge' // mod build之后的jar文件名 文件名的格式默认为${archivesBaseName}-${version}.jar
 
