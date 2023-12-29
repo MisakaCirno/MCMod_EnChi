@@ -1,5 +1,7 @@
 {
   "block.examplemod.example_block": "Xiao Bing Gan Block",
 
-  "item.examplemod.example_item": "Xiao Bing Gan"
+  "item.examplemod.example_item": "Xiao Bing Gan",
+
+  "itemGroup.examplemod_tab": "En Chi Xiao Bing Gan"
 }
