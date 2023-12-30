@@ -2,6 +2,7 @@
   "block.examplemod.example_block": "小饼干方块",
 
   "item.examplemod.example_item": "小饼干",
+  "item.examplemod.magic_mirror_item": "魔镜",
 
   "itemGroup.examplemod_tab": "摁吃小饼干"
 }
