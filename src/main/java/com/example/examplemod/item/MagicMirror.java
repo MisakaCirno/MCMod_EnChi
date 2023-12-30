@@ -1,4 +1,4 @@
-package com.example.examplemod.items;
+package com.example.examplemod.item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -30,6 +30,8 @@ public class MagicMirror extends Item {
             serverPlayer.teleportTo(spawnPos.getX(), spawnPos.getY(), spawnPos.getZ());
         }
 
-        return super.use(level, player, useHand);
+        // return super.use(level, player, useHand);
+        // 手动一下的效果
+        return InteractionResultHolder.success(player.getItemInHand(useHand));
     }
 }
