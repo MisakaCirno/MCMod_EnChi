@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "examplemod:block/iron_bucket_block_top_open",
+    "bottom": "examplemod:block/iron_bucket_block_bottom",
+    "side": "examplemod:block/iron_bucket_block_side"
+  }
+}

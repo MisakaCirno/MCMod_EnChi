@@ -21,4 +21,7 @@ public class ModItems {
     // 向注册表中注册方块物品
     public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block_item",
             () -> new BlockItem(ModBlocks.EXAMPLE_BLOCK.get(), new Item.Properties().tab(ModCreativeTabs.EXAMPLE_TAB)));
+
+    public static final RegistryObject<Item> IRON_BUCKET_BLOCK_ITEM = ITEMS.register("iron_bucket_block_item",
+            () -> new BlockItem(ModBlocks.IRON_BUCKET_BLOCK.get(), new Item.Properties().tab(ModCreativeTabs.EXAMPLE_TAB)));
 }

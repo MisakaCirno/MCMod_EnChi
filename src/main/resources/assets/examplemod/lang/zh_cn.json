@@ -1,5 +1,6 @@
 {
   "block.examplemod.example_block": "小饼干方块",
+  "block.examplemod.iron_bucket_block": "铁桶方块",
 
   "item.examplemod.example_item": "小饼干",
   "item.examplemod.magic_mirror_item": "魔镜",

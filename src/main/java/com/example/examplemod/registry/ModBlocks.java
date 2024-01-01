@@ -1,5 +1,6 @@
 package com.example.examplemod.registry;
 
+import com.example.examplemod.block.IronBucketBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Material;
@@ -15,4 +16,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block",
             () -> new Block(Block.Properties.copy(Blocks.IRON_BLOCK)));
     // Block.Properties.of(Material.STONE).strength(5.0f, 6.0f)
+
+    public static final RegistryObject<Block> IRON_BUCKET_BLOCK = BLOCKS.register("iron_bucket_block",
+            () -> new IronBucketBlock(Block.Properties.copy(Blocks.IRON_BLOCK)));
 }
