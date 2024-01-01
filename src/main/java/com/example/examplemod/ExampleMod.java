@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.registry.ModBlockEntities;
 import com.example.examplemod.registry.ModBlocks;
 import com.example.examplemod.registry.ModItems;
 import com.mojang.logging.LogUtils;
@@ -47,6 +48,7 @@ public class ExampleMod
         // 把注册表注册到mod事件总线
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)
