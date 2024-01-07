@@ -1,5 +1,6 @@
 package com.example.examplemod.registry;
 
+import com.example.examplemod.item.ItemZongZi;
 import com.example.examplemod.item.MagicMirror;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -19,7 +20,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeTabs.EXAMPLE_TAB)));
 
     public static final RegistryObject<Item> ZONG_ZI = ITEMS.register("zong_zi",
-            () -> new Item(
+            () -> new ItemZongZi(
                     new Item.Properties()
                             .food(
                                     new FoodProperties.Builder()
@@ -39,6 +40,7 @@ public class ModItems {
                                                     1) // 食用后的效果
                                             .build()
                             )
+                            .stacksTo(1) // 最大堆叠数量
                             .tab(ModCreativeTabs.EXAMPLE_TAB)));
 
     public static final RegistryObject<Item> MAGIC_MIRROR_ITEM = ITEMS.register("magic_mirror_item",
