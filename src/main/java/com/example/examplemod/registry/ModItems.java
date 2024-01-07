@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -42,6 +43,13 @@ public class ModItems {
                             )
                             .stacksTo(1) // 最大堆叠数量
                             .tab(ModCreativeTabs.EXAMPLE_TAB)));
+
+    public static final RegistryObject<Item> EXAMPLE_SWORD = ITEMS.register("example_sword",
+            () -> new SwordItem(
+                    ModTires.EXAMPLE,
+                    2,
+                    1.5f,
+                    new Item.Properties().tab(ModCreativeTabs.EXAMPLE_TAB)));
 
     public static final RegistryObject<Item> MAGIC_MIRROR_ITEM = ITEMS.register("magic_mirror_item",
             () -> new MagicMirror(new Item.Properties().tab(ModCreativeTabs.EXAMPLE_TAB)));
