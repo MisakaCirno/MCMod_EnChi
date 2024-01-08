@@ -18,8 +18,8 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.18.2-0.0.0.1'
-group = 'com.enchi.mcmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'enchi_forge' // mod build之后的jar文件名 文件名的格式默认为${archivesBaseName}-${version}.jar
+group = 'com.toolran.mc' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'enchixiaobinggan_forge' // mod build之后的jar文件名 文件名的格式默认为${archivesBaseName}-${version}.jar
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 // Mojang 在 1.18+ 中向最终用户提供 Java 17，因此您的模组应该针对 Java 17。
