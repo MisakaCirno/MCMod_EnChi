@@ -26,6 +26,9 @@ https://docs.minecraftforge.net/en/1.18.x/gettingstarted/
 Forge 中文文档
 https://mcforge-cn.readthedocs.io/zh/latest/
 
+另一个Mapping
+https://github.com/ParchmentMC/Librarian/blob/dev/docs/FORGEGRADLE.md
+
 # 版本号格式
 `MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH`
 

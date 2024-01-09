@@ -3,10 +3,12 @@ buildscript {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         // 这些仓库仅用于 Gradle 插件，将其他仓库放在下面的 repository 块中
         maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
     }
 }
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
@@ -16,6 +18,7 @@ plugins {
     id 'maven-publish'
 }
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 version = '1.18.2-0.0.0.1'
 group = 'com.toolran.mc' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -56,7 +59,8 @@ minecraft {
     //
     // 使用非默认映射时要自担风险。 它们可能不总是有效。
     // 更改映射后，只需重新运行设置任务即可更新工作区。
-    mappings channel: 'official', version: '1.18.2'
+    // mappings channel: 'official', version: '1.18.2' //默认使用的映射
+    mappings channel: 'parchment', version: '2022.11.06-1.18.2'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
     // 目前，此位置无法从默认值更改。
