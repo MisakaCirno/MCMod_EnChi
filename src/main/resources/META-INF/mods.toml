@@ -48,7 +48,7 @@ version="${file.jarVersion}" #mandatory
 
  # A display name for the mod
 # mod的显示名称
-displayName="Example Mod" #mandatory
+displayName="En Chi Xiao Bing Gan" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 # 用于查询此mod的更新的URL。请参阅JSON更新规范
@@ -64,25 +64,20 @@ logoFile="examplemod.png" #optional
 
 # A text field displayed in the mod UI
 # 在mod UI中显示的文本字段
-credits="Thanks for this example mod goes to Java" #optional
+credits="这一段文字会出现在哪里呢？" #optional
 
 # A text field displayed in the mod UI
 # 在mod UI中显示的文本字段
-authors="Love, Cheese and small house plants" #optional
+authors="MisakaCiron（御琪幽然）" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 # mod的描述文本（多行！）
-description='''
-This is a long form description of the mod. You can write whatever you want here
-
-Have some lorem ipsum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio eu tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque volutpat ligula eget lacus auctor sagittis. In hac habitasse platea dictumst. Nunc gravida elit vitae sem vehicula efficitur. Donec mattis ipsum et arcu lobortis, eleifend sagittis sem rutrum. Cras pharetra quam eget posuere fermentum. Sed id tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-'''
+description='''佛说需要写一点乱七八糟的描述，那我就写一点乱七八糟的描述吧。
+这里还支持多行，我再多写一行的内容吧。'''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 # 依赖项-使用。指示特定modid的依赖项。依赖关系是可选的。
-[[dependencies.examplemod]] #optional
+[[dependencies.enchixiaobinggan]] #optional
     # the modid of the dependency
     # 依赖项的modid
     modId="forge" #mandatory
@@ -105,7 +100,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magn
 
 # Here's another dependency
 # 这是另一个依赖项
-[[dependencies.examplemod]]
+[[dependencies.enchixiaobinggan]]
     modId="minecraft"
     mandatory=true
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
