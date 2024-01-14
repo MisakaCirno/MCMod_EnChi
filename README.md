@@ -29,6 +29,9 @@ https://mcforge-cn.readthedocs.io/zh/latest/
 另一个Mapping
 https://github.com/ParchmentMC/Librarian/blob/dev/docs/FORGEGRADLE.md
 
+战利品表生成器
+https://misode.github.io/loot-table/
+
 # 版本号格式
 `MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH`
 
