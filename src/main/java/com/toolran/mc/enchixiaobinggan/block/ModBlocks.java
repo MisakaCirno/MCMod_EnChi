@@ -1,6 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.block;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
+import com.toolran.mc.enchixiaobinggan.block.custom.SpeedyBlock;
 import com.toolran.mc.enchixiaobinggan.item.ModCreativeModeTab;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -51,5 +52,11 @@ public class ModBlocks {
             "citrine_block",
             ()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+
+    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock(
+            "speedy_block",
+            ()-> new SpeedyBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(3f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
 }
