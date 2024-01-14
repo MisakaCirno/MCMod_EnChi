@@ -2,6 +2,7 @@ package com.toolran.mc.enchixiaobinggan;
 
 
 import com.mojang.logging.LogUtils;
+import com.toolran.mc.enchixiaobinggan.block.ModBlocks;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import net.minecraft.Util;
 import net.minecraft.network.chat.TextComponent;
@@ -36,6 +37,7 @@ public class EnChiXiaoBingGan {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         // Register the setup method for modloading
         // 注册modloading的setup方法
