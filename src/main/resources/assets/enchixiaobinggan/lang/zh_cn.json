@@ -1,7 +1,10 @@
 {
   "item.enchixiaobinggan.citrine": "黄水晶",
+  "item.enchixiaobinggan.dowsing_rod": "寻宝棒",
 
   "block.enchixiaobinggan.citrine_block": "黄水晶方块",
 
-  "itemGroup.enchixiaobinggan_tab": "摁吃小饼干"
+  "itemGroup.enchixiaobinggan_tab": "摁吃小饼干",
+
+  "item.enchixiaobinggan.dowsing_rod.no_valuables": "没有找到任何有价值的东西"
 }

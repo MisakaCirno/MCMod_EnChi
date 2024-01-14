@@ -1,6 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.item;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
+import com.toolran.mc.enchixiaobinggan.item.custom.DowsingRodItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,4 +20,11 @@ public class ModItems {
     public static final RegistryObject<Item> CITRINE = ITEMS.register(
             "citrine",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
+
+    public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register(
+            "dowsing_rod",
+            () -> new DowsingRodItem(
+                    new Item.Properties()
+                            .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
+                            .durability(16)));
 }

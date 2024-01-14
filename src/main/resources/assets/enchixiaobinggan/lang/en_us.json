@@ -1,7 +1,10 @@
 {
   "item.enchixiaobinggan.citrine": "Citrine",
+  "item.enchixiaobinggan.dowsing_rod": "Dowsing Rod",
 
   "block.enchixiaobinggan.citrine_block": "Citrine Block",
 
-  "itemGroup.enchixiaobinggan_tab": "En Chi Xiao Bing Gan"
+  "itemGroup.enchixiaobinggan_tab": "En Chi Xiao Bing Gan",
+
+  "item.enchixiaobinggan.dowsing_rod.no_valuables": "No valuables found"
 }
