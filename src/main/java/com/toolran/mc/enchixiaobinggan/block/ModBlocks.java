@@ -1,6 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.block;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
+import com.toolran.mc.enchixiaobinggan.item.ModCreativeModeTab;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -50,5 +51,5 @@ public class ModBlocks {
             "citrine_block",
             ()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()),
-            CreativeModeTab.TAB_MISC);
+            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
 }
