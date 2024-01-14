@@ -2,6 +2,7 @@ package com.toolran.mc.enchixiaobinggan;
 
 
 import com.mojang.logging.LogUtils;
+import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import net.minecraft.Util;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.entity.player.Player;
@@ -12,23 +13,37 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(Main.MOD_ID)
+@Mod(EnChiXiaoBingGan.MOD_ID)
 @Mod.EventBusSubscriber
-public class Main {
+public class EnChiXiaoBingGan {
     public static final String MOD_ID = "enchixiaobinggan";
 
     // Directly reference a slf4j logger
     // 直接引用slf4j记录器
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Main() {
+    public EnChiXiaoBingGan() {
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(eventBus);
+
+        // Register the setup method for modloading
+        // 注册modloading的setup方法
+        eventBus.addListener(this::setup);
+
+        // Register ourselves for server and other game events we are interested in
+        // 注册我们自己感兴趣的服务器和其他游戏事件
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event)
