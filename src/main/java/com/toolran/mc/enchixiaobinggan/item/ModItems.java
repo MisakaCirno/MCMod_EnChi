@@ -1,6 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.item;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
+import com.toolran.mc.enchixiaobinggan.item.custom.CoalCokeItem;
 import com.toolran.mc.enchixiaobinggan.item.custom.DowsingRodItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -33,4 +34,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
                     .food(ModFoods.CUCUMBER)));
+
+    public static final RegistryObject<Item> COAL_COKE = ITEMS.register(
+            "coal_coke",
+            () -> new CoalCokeItem(new Item.Properties()
+                    .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
 }
