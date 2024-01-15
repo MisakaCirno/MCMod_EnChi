@@ -9,5 +9,8 @@
 
   "itemGroup.enchixiaobinggan_tab": "摁吃小饼干",
 
-  "item.enchixiaobinggan.dowsing_rod.no_valuables": "没有找到任何有价值的东西"
+  "item.enchixiaobinggan.dowsing_rod.no_valuables": "没有找到任何有价值的东西",
+  "tooltip.enchixiaobinggan.dowsing_rod.tooltip.shift": "使用后，可以探查选中方块下方指定距离内是否存在矿物",
+  "tooltip.enchixiaobinggan.dowsing_rod.tooltip": "按住§eShift§r查看详细信息",
+  "tooltip.enchixiaobinggan.speedy_block.tooltip": "加速方块，放置在地上后，站在上面可以加速移动"
 }
