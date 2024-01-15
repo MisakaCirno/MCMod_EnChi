@@ -27,4 +27,10 @@ public class ModItems {
                     new Item.Properties()
                             .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
                             .durability(16)));
+
+    public static final RegistryObject<Item> CUCUMBER = ITEMS.register(
+            "cucumber",
+            () -> new Item(new Item.Properties()
+                    .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
+                    .food(ModFoods.CUCUMBER)));
 }
