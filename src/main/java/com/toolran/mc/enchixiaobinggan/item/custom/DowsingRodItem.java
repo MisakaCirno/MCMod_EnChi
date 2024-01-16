@@ -1,10 +1,15 @@
 package com.toolran.mc.enchixiaobinggan.item.custom;
 
+import com.toolran.mc.enchixiaobinggan.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -80,9 +85,13 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block){
-        return block == Blocks.COAL_ORE
-                || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE
-                || block == Blocks.IRON_ORE;
+//        ResourceKey<Block> s1 = Registry.BLOCK.getResourceKey(block).get();
+//        Holder<Block> s2 = Registry.BLOCK.getHolderOrThrow(s1);
+//        TagKey<Block> s3 = ModTags.Blocks.DOWSING_ROD_VALUABLES;
+//        boolean s4 = s2.is(s3);
+//        return s4;
+
+        return Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get())
+                .is(ModTags.Blocks.DOWSING_ROD_VALUABLES);
     }
 }
