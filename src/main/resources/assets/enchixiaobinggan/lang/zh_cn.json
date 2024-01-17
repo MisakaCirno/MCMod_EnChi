@@ -7,6 +7,12 @@
   "block.enchixiaobinggan.citrine_block": "黄水晶方块",
   "block.enchixiaobinggan.speedy_block": "加速方块",
 
+  "block.enchixiaobinggan.citrine_stairs": "黄水晶楼梯",
+  "block.enchixiaobinggan.citrine_slab":"黄水晶台阶",
+  "block.enchixiaobinggan.citrine_fence": "黄水晶栅栏",
+  "block.enchixiaobinggan.citrine_fence_gate":"黄水晶栅栏门",
+  "block.enchixiaobinggan.citrine_wall": "黄水晶墙",
+
   "itemGroup.enchixiaobinggan_tab": "摁吃小饼干",
 
   "item.enchixiaobinggan.dowsing_rod.no_valuables": "没有找到任何有价值的东西",

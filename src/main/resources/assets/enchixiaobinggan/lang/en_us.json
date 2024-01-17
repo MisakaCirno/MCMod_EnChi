@@ -7,6 +7,12 @@
   "block.enchixiaobinggan.citrine_block": "Citrine Block",
   "block.enchixiaobinggan.speedy_block": "Speedy Block",
 
+  "block.enchixiaobinggan.citrine_stairs": "Citrine Stairs",
+  "block.enchixiaobinggan.citrine_slab":"Citrine Slab",
+  "block.enchixiaobinggan.citrine_fence": "Citrine Fence",
+  "block.enchixiaobinggan.citrine_fence_gate":"Citrine Fence Gate",
+  "block.enchixiaobinggan.citrine_wall": "Citrine Wall",
+
   "itemGroup.enchixiaobinggan_tab": "En Chi Xiao Bing Gan",
 
   "item.enchixiaobinggan.dowsing_rod.no_valuables": "No valuables found",
