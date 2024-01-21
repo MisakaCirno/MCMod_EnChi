@@ -85,18 +85,28 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, EnChiXiaoBingGan.MOD_ID);
 
+    // #9 高级方块
+    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock(
+            "speedy_block",
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(3f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB,
+            "tooltip.enchixiaobinggan.speedy_block.tooltip");
+
+    // #4 自定义方块
     public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock(
             "citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+
+    // #14 楼梯，台阶，栅栏，栅栏门，墙
     public static final RegistryObject<Block> CITRINE_STARIS = registerBlock(
             "citrine_stairs",
             () -> new StairBlock(
                     ()->ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL).strength(9f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
-    // #14 楼梯，台阶，栅栏，栅栏门，墙
     public static final RegistryObject<Block> CITRINE_SLAB = registerBlock(
             "citrine_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
@@ -140,11 +150,4 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(5f).requiresCorrectToolForDrops().noOcclusion()),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
-
-    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock(
-            "speedy_block",
-            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(3f).requiresCorrectToolForDrops()),
-            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB,
-            "tooltip.enchixiaobinggan.speedy_block.tooltip");
 }
