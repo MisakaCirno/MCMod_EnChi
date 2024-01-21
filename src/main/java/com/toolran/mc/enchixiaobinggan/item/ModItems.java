@@ -79,4 +79,9 @@ public class ModItems {
             "citrine_boots",
             () -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
+
+    // #22 动画贴图
+    public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register(
+            "magic_dust",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
 }
