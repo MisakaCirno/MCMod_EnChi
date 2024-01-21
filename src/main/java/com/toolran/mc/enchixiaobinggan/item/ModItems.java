@@ -3,6 +3,7 @@ package com.toolran.mc.enchixiaobinggan.item;
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
 import com.toolran.mc.enchixiaobinggan.item.custom.CoalCokeItem;
 import com.toolran.mc.enchixiaobinggan.item.custom.DowsingRodItem;
+import com.toolran.mc.enchixiaobinggan.item.custom.LevitationSwordItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,7 +42,7 @@ public class ModItems {
     // # 16自定义工具
     public static final RegistryObject<Item> CITRINE_SWORD = ITEMS.register(
             "citrine_sword",
-            () -> new SwordItem(ModTiers.CITRINE, 2, 3f,
+            () -> new LevitationSwordItem(ModTiers.CITRINE, 2, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
     public static final RegistryObject<Item> CITRINE_PICKAXE = ITEMS.register(
             "citrine_pickaxe",
