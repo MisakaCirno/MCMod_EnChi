@@ -96,6 +96,7 @@ public class ModBlocks {
                     ()->ModBlocks.CITRINE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL).strength(9f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+    // #14 楼梯，台阶，栅栏，栅栏门，墙
     public static final RegistryObject<Block> CITRINE_SLAB = registerBlock(
             "citrine_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
