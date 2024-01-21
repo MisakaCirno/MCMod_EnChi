@@ -6,6 +6,7 @@ import com.toolran.mc.enchixiaobinggan.item.ModCreativeModeTab;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -23,6 +24,13 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+    }
+
+    // 注册方块的包装方法，不注册方块物品
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(
+            String name,
+            Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     // 注册方块的包装方法
@@ -150,4 +158,16 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(5f).requiresCorrectToolForDrops().noOcclusion()),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+
+    // #20 花和盆栽花
+    public static final RegistryObject<Block> PINK_ROSE = registerBlock(
+            "pink_rose",
+            () -> new FlowerBlock(MobEffects.LEVITATION,8,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()),
+            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+
+    public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutBlockItem(
+            "potted_pink_rose",
+            () -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 }
