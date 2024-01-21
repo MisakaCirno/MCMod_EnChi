@@ -13,7 +13,8 @@ import net.minecraft.world.level.ItemLike;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    //在textures/models/armor/目录下的文件名要与这里pName完全一致
+    // 在textures/models/armor/目录下的文件名要与这里pName完全一致
+    // 通过看ArmorMaterial的源码，抄过来的下面的代码
     CITRINE("citrine", 28, new int[]{2, 5, 8, 3}, 19,
             SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F,
             () -> Ingredient.of(ModItems.CITRINE.get()));

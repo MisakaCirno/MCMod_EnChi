@@ -4,6 +4,7 @@ import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
 import com.toolran.mc.enchixiaobinggan.item.custom.CoalCokeItem;
 import com.toolran.mc.enchixiaobinggan.item.custom.DowsingRodItem;
 import com.toolran.mc.enchixiaobinggan.item.custom.LevitationSwordItem;
+import com.toolran.mc.enchixiaobinggan.item.custom.ModArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -64,7 +65,7 @@ public class ModItems {
     // #17 自定义防具
     public static final RegistryObject<Item> CITRINE_HELMET = ITEMS.register(
             "citrine_helmet",
-            () -> new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.HEAD,
+            () -> new ModArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
     public static final RegistryObject<Item> CITRINE_CHESTPLATE = ITEMS.register(
             "citrine_chestplate",
