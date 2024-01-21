@@ -13,6 +13,11 @@
   "block.enchixiaobinggan.citrine_fence_gate":"黄水晶栅栏门",
   "block.enchixiaobinggan.citrine_wall": "黄水晶墙",
 
+  "block.enchixiaobinggan.citrine_button": "黄水晶按钮",
+  "block.enchixiaobinggan.citrine_pressure_plate":"黄水晶压力板",
+  "block.enchixiaobinggan.ebony_door": "黑檀木门",
+  "block.enchixiaobinggan.ebony_trapdoor":"黑檀木活板门",
+
   "itemGroup.enchixiaobinggan_tab": "摁吃小饼干",
 
   "item.enchixiaobinggan.dowsing_rod.no_valuables": "没有找到任何有价值的东西",

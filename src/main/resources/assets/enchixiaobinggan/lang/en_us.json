@@ -13,6 +13,11 @@
   "block.enchixiaobinggan.citrine_fence_gate":"Citrine Fence Gate",
   "block.enchixiaobinggan.citrine_wall": "Citrine Wall",
 
+  "block.enchixiaobinggan.citrine_button": "Citrine Button",
+  "block.enchixiaobinggan.citrine_pressure_plate":"Citrine Pressure Plate",
+  "block.enchixiaobinggan.ebony_door": "Ebony Door",
+  "block.enchixiaobinggan.ebony_trapdoor":"Ebony Trapdoor",
+
   "itemGroup.enchixiaobinggan_tab": "En Chi Xiao Bing Gan",
 
   "item.enchixiaobinggan.dowsing_rod.no_valuables": "No valuables found",

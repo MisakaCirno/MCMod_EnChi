@@ -4,6 +4,8 @@ package com.toolran.mc.enchixiaobinggan;
 import com.mojang.logging.LogUtils;
 import com.toolran.mc.enchixiaobinggan.block.ModBlocks;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,10 +31,18 @@ public class EnChiXiaoBingGan {
         // Register the setup method for modloading
         // 注册modloading的setup方法
         eventBus.addListener(this::setup);
+        eventBus.addListener(this::clientSetup);
 
         // Register ourselves for server and other game events we are interested in
         // 注册我们自己感兴趣的服务器和其他游戏事件
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    private void clientSetup(final FMLCommonSetupEvent event) {
+        // do something that can only be done on the client
+        // 做一些只能在客户端完成的事情
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_DOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.EBONY_TRAPDOOR.get(), RenderType.translucent());
     }
 
     private void setup(final FMLCommonSetupEvent event) {
