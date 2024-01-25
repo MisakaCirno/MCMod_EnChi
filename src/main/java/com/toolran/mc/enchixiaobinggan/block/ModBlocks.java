@@ -170,4 +170,10 @@ public class ModBlocks {
             "potted_pink_rose",
             () -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    // #22 透明方块
+    public static final RegistryObject<Block> WINTER_WINDOW = registerBlock(
+            "winter_window",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()),
+            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
 }
