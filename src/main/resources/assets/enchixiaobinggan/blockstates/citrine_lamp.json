@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "enchixiaobinggan:block/citrine_lamp_off"
+    },
+    "clicked=true": {
+      "model": "enchixiaobinggan:block/citrine_lamp_on"
+    }
+  }
+}

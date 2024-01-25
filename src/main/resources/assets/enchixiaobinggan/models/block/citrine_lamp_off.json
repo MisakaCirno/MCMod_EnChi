@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "enchixiaobinggan:block/citrine_lamp_off"
+  }
+}

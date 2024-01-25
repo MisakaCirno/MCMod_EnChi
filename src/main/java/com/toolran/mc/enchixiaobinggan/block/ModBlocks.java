@@ -1,6 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.block;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
+import com.toolran.mc.enchixiaobinggan.block.custom.CitrineLampBlock;
 import com.toolran.mc.enchixiaobinggan.block.custom.SpeedyBlock;
 import com.toolran.mc.enchixiaobinggan.item.ModCreativeModeTab;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
@@ -175,5 +176,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> WINTER_WINDOW = registerBlock(
             "winter_window",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).noOcclusion()),
+            ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+
+    // #23 方块状态
+    public static final RegistryObject<Block> CITRINE_LAMP = registerBlock(
+            "citrine_lamp",
+            () -> new CitrineLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel((state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
 }
