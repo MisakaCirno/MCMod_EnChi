@@ -42,7 +42,7 @@
   "itemGroup.enchixiaobinggan_tab": "En Chi Xiao Bing Gan",
 
   "item.enchixiaobinggan.dowsing_rod.no_valuables": "No valuables found",
-  "item.enchixiaobinggan.dowsing_rod.tooltip.shift": "Wo TM Bu Hui Fan Yi A!",
-  "item.enchixiaobinggan.dowsing_rod.tooltip": "Hold §eSHIFT§r to see the more detailed information",
+  "tooltip.enchixiaobinggan.dowsing_rod.tooltip.shift": "Wo TM Bu Hui Fan Yi A!",
+  "tooltip.enchixiaobinggan.dowsing_rod.tooltip": "Hold §eSHIFT§r to see the more detailed information",
   "tooltip.enchixiaobinggan.speedy_block.tooltip": "Speed up when you walk on it"
 }
