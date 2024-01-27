@@ -1,10 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.item;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
-import com.toolran.mc.enchixiaobinggan.item.custom.CoalCokeItem;
-import com.toolran.mc.enchixiaobinggan.item.custom.DowsingRodItem;
-import com.toolran.mc.enchixiaobinggan.item.custom.LevitationSwordItem;
-import com.toolran.mc.enchixiaobinggan.item.custom.ModArmorItem;
+import com.toolran.mc.enchixiaobinggan.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -84,4 +81,11 @@ public class ModItems {
     public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register(
             "magic_dust",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
+
+    // #25 NBT标签
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register(
+            "data_tablet",
+            () -> new DataTabletItem(new Item.Properties()
+                    .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
+                    .stacksTo(1)));
 }
