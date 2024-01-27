@@ -88,4 +88,10 @@ public class ModItems {
             () -> new DataTabletItem(new Item.Properties()
                     .tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
                     .stacksTo(1)));
+
+    // #26 自定义弓
+    public static final RegistryObject<Item> KAUPENBOW = ITEMS.register(
+            "kaupenbow",
+            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)
+                    .durability(500)));
 }

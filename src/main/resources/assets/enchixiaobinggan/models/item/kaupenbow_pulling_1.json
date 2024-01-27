@@ -1,0 +1,6 @@
+{
+  "parent": "enchixiaobinggan:item/kaupenbow",
+  "textures": {
+    "layer0": "enchixiaobinggan:item/kaupenbow_pulling_1"
+  }
+}

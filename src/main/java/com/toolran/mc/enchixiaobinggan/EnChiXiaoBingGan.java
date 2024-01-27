@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import com.toolran.mc.enchixiaobinggan.block.ModBlocks;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import com.toolran.mc.enchixiaobinggan.painting.ModPaintings;
+import com.toolran.mc.enchixiaobinggan.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -51,6 +52,8 @@ public class EnChiXiaoBingGan {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_PINK_ROSE.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WINTER_WINDOW.get(), RenderType.translucent());
+
+        ModItemProperties.addCustomItemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event) {
