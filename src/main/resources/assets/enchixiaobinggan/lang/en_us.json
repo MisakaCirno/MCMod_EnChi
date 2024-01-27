@@ -50,5 +50,13 @@
   "item.enchixiaobinggan.dowsing_rod.no_valuables": "No valuables found",
   "tooltip.enchixiaobinggan.dowsing_rod.tooltip.shift": "Wo TM Bu Hui Fan Yi A!",
   "tooltip.enchixiaobinggan.dowsing_rod.tooltip": "Hold §eSHIFT§r to see the more detailed information",
-  "tooltip.enchixiaobinggan.speedy_block.tooltip": "Speed up when you walk on it"
+  "tooltip.enchixiaobinggan.speedy_block.tooltip": "Speed up when you walk on it",
+
+  "sounds.enchixiaobinggan.dowsing_rod_found_ore": "Dowsing Rod Found Item Sound",
+
+  "sounds.enchixiaobinggan.citrine_lamp_break": "Citrine Lamp Break Sound",
+  "sounds.enchixiaobinggan.citrine_lamp_step": "Citrine Lamp Step Sound",
+  "sounds.enchixiaobinggan.citrine_lamp_place": "Citrine Lamp Place Sound",
+  "sounds.enchixiaobinggan.citrine_lamp_hit": "Citrine Lamp Hit Sound",
+  "sounds.enchixiaobinggan.citrine_lamp_fall": "Citrine Lamp Fall Sound"
 }

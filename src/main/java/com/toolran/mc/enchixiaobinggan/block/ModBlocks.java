@@ -6,6 +6,7 @@ import com.toolran.mc.enchixiaobinggan.block.custom.CucumberPlantBlock;
 import com.toolran.mc.enchixiaobinggan.block.custom.SpeedyBlock;
 import com.toolran.mc.enchixiaobinggan.item.ModCreativeModeTab;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
+import com.toolran.mc.enchixiaobinggan.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
@@ -184,7 +185,8 @@ public class ModBlocks {
             "citrine_lamp",
             () -> new CitrineLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
                     .requiresCorrectToolForDrops()
-                    .lightLevel((state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)),
+                    .lightLevel((state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)
+                    .sound(ModSounds.CITRINE_LAMP_SOUNDS)),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
 
     // #27 自定义农作物

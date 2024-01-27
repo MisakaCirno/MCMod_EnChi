@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import com.toolran.mc.enchixiaobinggan.block.ModBlocks;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
 import com.toolran.mc.enchixiaobinggan.painting.ModPaintings;
+import com.toolran.mc.enchixiaobinggan.sound.ModSounds;
 import com.toolran.mc.enchixiaobinggan.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -31,6 +32,7 @@ public class EnChiXiaoBingGan {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModPaintings.register(eventBus);
+        ModSounds.register(eventBus);
 
         // Register the setup method for modloading
         // 注册modloading的setup方法

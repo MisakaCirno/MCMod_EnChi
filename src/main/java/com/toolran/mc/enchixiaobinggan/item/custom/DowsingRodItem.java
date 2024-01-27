@@ -1,6 +1,7 @@
 package com.toolran.mc.enchixiaobinggan.item.custom;
 
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
+import com.toolran.mc.enchixiaobinggan.sound.ModSounds;
 import com.toolran.mc.enchixiaobinggan.util.InventoryUtil;
 import com.toolran.mc.enchixiaobinggan.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
@@ -12,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
@@ -50,6 +52,9 @@ public class DowsingRodItem extends Item {
                     if (InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())) {
                         addNbtToDataTablet(player, positionClicked.below(i), blockBelow);
                     }
+
+                    pContext.getLevel().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE.get(),
+                            SoundSource.BLOCKS, 1.0F, 1.0F);
 
                     break;
                 }
