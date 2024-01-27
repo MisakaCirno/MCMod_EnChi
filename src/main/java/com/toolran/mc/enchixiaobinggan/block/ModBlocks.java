@@ -2,6 +2,7 @@ package com.toolran.mc.enchixiaobinggan.block;
 
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
 import com.toolran.mc.enchixiaobinggan.block.custom.CitrineLampBlock;
+import com.toolran.mc.enchixiaobinggan.block.custom.CucumberPlantBlock;
 import com.toolran.mc.enchixiaobinggan.block.custom.SpeedyBlock;
 import com.toolran.mc.enchixiaobinggan.item.ModCreativeModeTab;
 import com.toolran.mc.enchixiaobinggan.item.ModItems;
@@ -185,4 +186,9 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .lightLevel((state) -> state.getValue(CitrineLampBlock.CLICKED) ? 15 : 0)),
             ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB);
+
+    // #27 自定义农作物
+    public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutBlockItem(
+            "cucumber_plant",
+            () -> new CucumberPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 }

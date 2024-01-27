@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "enchixiaobinggan:block/cucumber_stage3"
+  }
+}
