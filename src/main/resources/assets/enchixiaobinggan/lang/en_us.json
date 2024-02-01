@@ -22,6 +22,9 @@
 
   "item.enchixiaobinggan.cucumber_seeds": "Cucumber Seeds",
 
+  "item.enchixiaobinggan.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.enchixiaobinggan.bar_brawl_music_disc.desc": "§7Bar Brawl Music Disc Description§r",
+
   "block.enchixiaobinggan.citrine_block": "Citrine Block",
   "block.enchixiaobinggan.speedy_block": "Speedy Block",
 
@@ -58,5 +61,7 @@
   "sounds.enchixiaobinggan.citrine_lamp_step": "Citrine Lamp Step Sound",
   "sounds.enchixiaobinggan.citrine_lamp_place": "Citrine Lamp Place Sound",
   "sounds.enchixiaobinggan.citrine_lamp_hit": "Citrine Lamp Hit Sound",
-  "sounds.enchixiaobinggan.citrine_lamp_fall": "Citrine Lamp Fall Sound"
+  "sounds.enchixiaobinggan.citrine_lamp_fall": "Citrine Lamp Fall Sound",
+
+  "sounds.enchixiaobinggan.bar_brawl": "Bar Brawl Music Disc Sound"
 }

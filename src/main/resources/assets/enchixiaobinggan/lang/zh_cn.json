@@ -22,6 +22,10 @@
 
   "item.enchixiaobinggan.cucumber_seeds": "黄瓜种子",
 
+  "item.enchixiaobinggan.bar_brawl_music_disc": "酒吧打斗唱片",
+  "item.enchixiaobinggan.bar_brawl_music_disc.desc": "§7酒吧打斗唱片描述§r",
+
+
   "block.enchixiaobinggan.citrine_block": "黄水晶方块",
   "block.enchixiaobinggan.speedy_block": "加速方块",
 
@@ -58,5 +62,7 @@
   "sounds.enchixiaobinggan.citrine_lamp_step": "黄水晶灯踩踏的声音",
   "sounds.enchixiaobinggan.citrine_lamp_place": "黄水晶灯放置的声音",
   "sounds.enchixiaobinggan.citrine_lamp_hit": "黄水晶灯被击打的声音",
-  "sounds.enchixiaobinggan.citrine_lamp_fall": "黄水晶灯掉落的声音"
+  "sounds.enchixiaobinggan.citrine_lamp_fall": "黄水晶灯掉落的声音",
+
+  "sounds.enchixiaobinggan.bar_brawl": "Bar Brawl塞入了唱片机中"
 }

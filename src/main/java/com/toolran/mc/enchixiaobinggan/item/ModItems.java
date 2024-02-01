@@ -3,6 +3,7 @@ package com.toolran.mc.enchixiaobinggan.item;
 import com.toolran.mc.enchixiaobinggan.EnChiXiaoBingGan;
 import com.toolran.mc.enchixiaobinggan.block.ModBlocks;
 import com.toolran.mc.enchixiaobinggan.item.custom.*;
+import com.toolran.mc.enchixiaobinggan.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -101,4 +102,10 @@ public class ModItems {
             "cucumber_seeds",
             () -> new ItemNameBlockItem(ModBlocks.CUCUMBER_PLANT.get(),
                     new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB)));
+
+    // #29 自定义唱片
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register(
+            "bar_brawl_music_disc",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL,
+                    new Item.Properties().tab(ModCreativeModeTab.ENCHIXIAOBINGGAN_TAB).stacksTo(1)));
 }

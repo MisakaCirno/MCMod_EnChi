@@ -34,5 +34,14 @@
     "sounds": [
       "enchixiaobinggan:citrine_lamp_fall"
     ]
+  },
+  "bar_brawl": {
+    "subtitle": "sounds.enchixiaobinggan.bar_brawl",
+    "sounds": [
+      {
+        "name": "enchixiaobinggan:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }

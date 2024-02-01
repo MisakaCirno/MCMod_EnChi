@@ -31,6 +31,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> CITRINE_LAMP_HIT = registerSoundEvent("citrine_lamp_hit");
     public static final RegistryObject<SoundEvent> CITRINE_LAMP_FALL = registerSoundEvent("citrine_lamp_fall");
 
+    public static final RegistryObject<SoundEvent> BAR_BRAWL = registerSoundEvent("bar_brawl");
+
     public static final ForgeSoundType CITRINE_LAMP_SOUNDS = new ForgeSoundType(1.0F, 1.0F,
             ModSounds.CITRINE_LAMP_BREAK,
             ModSounds.CITRINE_LAMP_STEP,
